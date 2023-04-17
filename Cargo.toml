@@ -1,0 +1,32 @@
+[package]
+name = "serve_embed"
+version = "0.1.0"
+edition = "2021"
+description = "serve embedded file with axum"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6"
+bytes = "1.4"
+derivative = "2.2"
+# derive_builder = "0.12"
+fly-accept-encoding = "0.2"
+futures-util = "0.3"
+http = "0.2"
+http-body = "0.4"
+http-range-header = "0.3"
+httpdate = "1.0"
+hyper = { version = "0.14",  features = ["full"] }
+log = "0.4"
+rust-embed = { version = "6.6", features = ["mime-guess"] }
+tokio = { version = "1.6", features = ["full"] }
+tower = "0.4"
+
+[dev-dependencies]
+anyhow = "1.0"
+ctrlc = "3.4"
+env_logger = "0.10"
+flate2 = "1.0"
+reqwest = "0.11"
